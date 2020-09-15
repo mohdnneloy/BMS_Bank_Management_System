@@ -1,0 +1,102 @@
+{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+
+}
+
+
+.body{
+	background-color: #F5F5F5;
+}
+
+.main{
+	width: 30%;
+	height: 40%;
+	margin: 250px auto;
+	box-shadow:10px 10px 16px 0px grey;
+	background-color:#EEEEEE ;
+	border-radius: 10px;
+	border-top: 10px solid #FAFAFA;
+	border-left: 5px solid #FAFAFA;
+
+
+
+
+}
+
+h1{
+	text-align: center;
+	padding: 10px 0;
+	color: #5E5E5E;
+	text-align: center;
+	text-shadow: blue;
+}
+
+h2{
+	color: blue;
+	text-shadow: 2px 2px #777777;
+	text-align: center;
+	text-decoration-color:#666666;
+
+}
+.main .input-main input{
+	width: 90%;
+	box-sizing: border-box;
+	margin-left: 20px;
+	padding: 10px;
+	font-size: 15px;
+	font-weight: 600;
+	color: grey;
+	margin-top: 10px;
+	background-color: white;
+	border: none;
+	border-bottom: 3px solid white;
+	border-radius: 7px;
+	box-shadow:inset 0px  3px 5px grey;
+
+
+
+
+}
+
+.button button{
+	padding: 5px 10px;
+	font-size: 10px;
+	font-weight: 600;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px 0px grey;
+	margin-top: 20px;
+	margin-left: 220px;
+	background-color: grey;
+
+}
+.button button:hover{
+	cursor: pointer;
+	background-color: #F2F8FD;
+	transition: .4s;
+	padding: 11px 31px;
+}
+
+.main .input-main input:hover{
+	background-color: #F5F5F5;
+}
+
+
+img{
+	border-radius: box;
+	background-color:#F2F8FD
+	margin-left:auto;
+	margin-right: auto;
+    width: 40%;
+   
+
+}
+h4{
+	color: green;
+	text-align: left;
+	text-decoration-color: blue;
+	text-decoration-line: underline;
+
+}
