@@ -1,0 +1,232 @@
+*{
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.container{
+  width : 100%;
+  height : 100%;
+}
+
+.BMS{
+
+  font-family: 'Mukta', sans-serif;
+  font-size : 150px;
+  color : #5883FF;
+  margin-left: 25%;
+  margin-top: -23%;
+}
+
+
+img.mainPage{
+
+  width : 200px;
+  height : 200px;
+  margin-left: 55%;
+  margin-top: 30%;
+
+
+}
+
+
+h3{
+
+  font-family: 'Mukta', sans-serif;
+  font-size : 50px;
+  color : #FF6979;
+  margin-left: 34%;
+  margin-top: -7%;
+
+
+
+}
+img.signIn{
+
+  width : 150px;
+  height : 150px;
+}
+
+section.left{
+
+  padding-top: 3%;
+  width : 50%;
+  float : left;
+}
+
+section.right{
+
+  padding-top: 2%;
+  width : 35%;
+  height: 750px;
+  float : right;
+  margin-right: 5%;
+  margin-top: 5%;
+  border: 5px solid #FF6979;
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'Mukta', sans-serif;
+}
+
+.text-signIn{
+
+  color : #FF6979;
+  font-size : 50px;
+  margin-top: 2%;
+}
+
+.cust-signIn{
+
+  font-size : 50px;
+  font-size : 40px;
+}
+
+.signIn{
+
+  width : 300px;
+  height: 50px;
+}
+
+.employee_id{
+
+  margin-top: 3%;
+  width : 85%;
+  height : 50px;
+  border: 2px solid #707070;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 20px;
+  outline: none;
+  color: #707070;
+  font-family: 'Mukta', sans-serif;
+
+}
+
+.employee_id:hover{
+
+  margin-top: 3%;
+  width : 85%;
+  height : 50px;
+  border: 2px solid #5883FF;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 20px;
+  outline: none;
+  transition: .3s;
+  font-family: 'Mukta', sans-serif;
+}
+
+.employee_id:focus{
+
+  margin-top: 3%;
+  width : 85%;
+  height : 50px;
+  border: 2px solid #FF6979;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 20px;
+  outline: none;
+  transition: .3s;
+  font-family: 'Mukta', sans-serif;
+}
+
+.employee_id:focus::-webkit-input-placeholder{
+  opacity: 0;
+  transition: .3s;
+}
+
+.password{
+
+  margin-top: 3%;
+  width : 85%;
+  height : 50px;
+  border: 2px solid #707070;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 20px;
+  outline: none;
+  font-family: 'Mukta', sans-serif;
+}
+
+.password:hover{
+
+  margin-top: 3%;
+  width : 85%;
+  height : 50px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 20px;
+  outline: none;
+  border: 2px solid #5883FF;
+  transition: .3s;
+  font-family: 'Mukta', sans-serif;
+
+}
+
+
+.password:focus{
+
+  margin-top: 3%;
+  width : 85%;
+  height : 50px;
+  border: 2px solid #707070;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 20px;
+  outline: none;
+  border: 2px solid #FF6979;
+  transition: .3s;
+  font-family: 'Mukta', sans-serif;
+
+}
+
+.password:focus::-webkit-input-placeholder{
+  opacity: 0;
+  transition: .3s;
+}
+
+.bttn{
+
+  font-size: 20px;
+  margin-top: 5%;
+  width : 30%;
+  height : 50px;
+  color : white;
+  outline: none;
+  border: 2px solid #5883FF;
+  border-radius: 30px;
+  background-color: #5883FF;
+  font-family: 'Mukta', sans-serif;
+  }
+
+  .bttn:hover{
+
+    font-size: 20px;
+    margin-top: 5%;
+    width : 30%;
+    height : 50px;
+    color : white;
+    outline: none;
+    border: 2px solid #FF6979;
+    border-radius: 30px;
+    background-color: #FF6979;
+    transition: .3s;
+    font-family: 'Mukta', sans-serif;
+    }
+
+  a{
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    text-align:left;
+  }
+
+  .links{
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    text-align:left;
+    margin-top: 5%;
+    margin-left: 10%;
+  }
