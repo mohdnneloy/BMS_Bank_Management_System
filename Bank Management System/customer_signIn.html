@@ -7,34 +7,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
   </head>
 
-  <div class = "container">
+  <body>
+      <div class = "container">
 
-    <section class = "left">
-      <img class = "mainPage" src = "Pics/Main Page Icon.png">
-      <div class = "BMS" >BMS</div>
-      <h3>Keep Track Of Your Data</h3>
-    </section>
+          <section class = "left">
+            <img class = "mainPage" src = "Pics/Main Page Icon.png">
+            <div class = "BMS" >BMS</div>
+            <h3>Keep Track Of Your Data</h3>
+          </section>
 
-    <section class = "right">
-      <h1 class = "text-signIn">SIGN IN</h1>
-      <img class = "signIn" src = "Pics/No Profile Icon.png">
-      <h1 class = "cust-signIn">CUSTOMER</h1>
-      <form action = "" method = "POST">
-        <input class= "email" type="email" placeholder="Email">
-      </br>
-        <input class = "password" type="password" placeholder="Password">
-        </br>
-        <input type= "submit" class = "bttn" value="Sign In">
-      </form>
-      <div class= "links">
-      <a href = "">Create New Account</a>
-    </br>
-      <a href = "employee_signIn.html">Employee Sign In</a>
-    </div>
-    </section>
+          <section class = "right">
+            <h1 class = "text-signIn">SIGN IN</h1>
+            <img class = "signIn" src = "Pics/No Profile Icon.png">
+            <h1 class = "cust-signIn">CUSTOMER</h1>
+
+            <form action = 'php/practice.php' method = "POST">
+              <input class= "email" type="email" name= 'email' placeholder="Email">
+              </br>
+              <input class = "password" type="password" name= 'password'  placeholder="Password">
+            </br>
+            <input type= "submit" class = "bttn" value="Sign In">
+          </form>
+
+          <div class= "links">
+            <a href = "signUp.html">Create New Account</a>
+            </br>
+            <a href = "employee_signIn.html">Employee Sign In</a>
+          </div>
+
+        </section>
 
   </div>
 
 
-  </body>
+    </body>
 </html>

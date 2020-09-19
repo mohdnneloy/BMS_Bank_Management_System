@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <title>BMS Customer Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="css/style_signUp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class = "container">
+
+      <section class= 'customer_left'>
+        <h1 class = "text-signIn_left">SIGN IN</h1>
+        <h1 class = "text">CUSTOMER</h1>
+
+        <form action = "php/customer_signUp.php" method = "POST">
+
+          <input class= "fname" type="text" name = "fname" placeholder="First Name">
+          <input class= "lname" type="text" name = "lname" placeholder="Last Name">
+          </br>
+          <input class= "email" type="email" name = "email" placeholder="Email">
+          </br>
+          <input class= "password" type="password" name = "password" placeholder="Password">
+          </br>
+          <input class= "password" type="password" name = "confirm_password" placeholder="Confirm Password">
+          </br>
+
+          <select class="gender" name = "gender">
+            <option value="" Selected>Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+
+          <label for="Birth_Date">  DOB  </label>
+          <input type="date" id = "Birth_Date" name = "Birth_Date" placeholder="DOB">
+          <input class= "Occupation" type="text" name = "Occupation" placeholder="Occupation">
+          </br>
+          <input class= "Str_Address" type="text" name = "Str_Address" placeholder="Street Address">
+          </br>
+          <input class= "City" type="text" name = "City" placeholder="City">
+          <input class= "State" type="text" name = "State" placeholder="State">
+          <input class= "Pincode" type="text" name = "Pincode" placeholder="Pincode">
+          <input class= "Country" type="text" name = "Country" placeholder="Country">
+          </br>
+          <input class= "Contact_Number" type="text" name = "Contact_Number" placeholder="Contact Number">
+          <select class="Account_Type" name = "Account_Type">
+            <option value="" Selected>Account Type</option>
+            <option value="Savings">Savings</option>
+            <option value="Current">Current</option>
+            <option value="Foreign Currency">Foreign Currency</option>
+            <option value="Fixed Deposit">Fixed Deposit</option>
+          </select>
+          </br>
+          <input type= "submit" class = "bttn" value="SIGN UP">
+          </form>
+
+          <div class = "links">
+            <a href = "customer_signIn.html">Customer Sign In</a>
+            </div>
+
+
+      </section>
+
+      <section class = "employee_right">
+
+        <h1 class = "text-signIn_right">SIGN IN</h1>
+        <h1 class = "text">EMPLOYEE</h1>
+
+        <form action = "php/employee_SignUp.php" method = "POST">
+
+          <input class= "fname" type="text" name = "efname" placeholder="First Name">
+          <input class= "lname" type="text" name = "elname" placeholder="Last Name">
+          </br>
+          <input class= "email" type="email" name = "eemail" placeholder="Email">
+          </br>
+          <input class= "password" type="password" name = "epassword" placeholder="Password">
+          </br>
+          <input class= "password" type="password" name = "econfirm_password" placeholder="Confirm Password">
+          </br>
+
+          <select class="gender" name = egender>
+            <option value="" Selected>Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+
+          <label for="Birth_Date">DOB</label>
+          <input type="date" id = "Birth_Date" name = "eBirth_Date">
+          <input class= "Occupation" type="text" name = "eOccupation" placeholder="Occupation">
+          </br>
+          <input class= "Str_Address" type="text" name = "eStr_Address" placeholder="Street Address">
+          </br>
+          <input class= "City" type="text" name = "eCity" placeholder="City">
+          <input class= "State" type="text" name = "eState" placeholder="State">
+          <input class= "Pincode" type="text" name = "ePincode" placeholder="Pincode">
+          <input class= "Country" type="text" name = "eCountry" placeholder="Country">
+          </br>
+          <input class= "Contact_Number" type="text" name = "eContact_Number" placeholder="Contact Number">
+          </br>
+          <input type= "submit" class = "ebttn" value="SIGN UP">
+
+          </form>
+
+          <div class = "links">
+          <a href = "employee_signIn.html">Employee Sign In</a>
+          </div>
+
+
+      </section>
+
+
+    </div>
+
+
+  </body>
+</html>
