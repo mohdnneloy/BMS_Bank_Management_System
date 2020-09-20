@@ -2,6 +2,8 @@
 
 require('connect.php'); // Adding connect file for database connection
 
+session_start();
+
 // Checking if email values are set or not
  if(empty($_POST["employee_id"]) && empty($_POST["password"])){
    echo '<script>alert("Please enter your details!")</script>';
@@ -31,6 +33,9 @@ require('connect.php'); // Adding connect file for database connection
       $employee_id = $_POST["employee_id"];
       $password = $_POST["password"];
 
+      //Transfer value to session
+
+      $_SESSION['employeeId'] = $employee_id;
 
       // Fetching Data from database
       $sql0 = "Select count(*) as Count From Employee;";
@@ -77,7 +82,7 @@ require('connect.php'); // Adding connect file for database connection
         else if (!empty($employee_idcheck) && !empty($passwordcheck)){
 
           echo '<script>alert("Signed In!")</script>';
-          echo '<script>window.location= "../customer_signIn.html";</script>';
+          echo '<script>window.location= "../employee_profile.php";</script>';
           exit();
         }
 

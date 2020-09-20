@@ -64,14 +64,14 @@ require('connect.php'); // Adding connect file for database connection
         if (empty($emailcheck)){
 
          echo '<script>alert("No Records Found!")</script>';
-         echo '<script>window.location= "../employee_signIn.html";</script>';
+         echo '<script>window.location= "../customer_signIn.html";</script>';
          exit();
        }
 
         else if (empty($passwordcheck)){
 
           echo '<script>alert("Wrong Password!")</script>';
-          echo '<script>window.location= "../employee_signIn.html";</script>';
+          echo '<script>window.location= "../customer_signIn.html";</script>';
           exit();
         }
 
