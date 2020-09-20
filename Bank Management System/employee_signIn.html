@@ -22,10 +22,10 @@
         <img class = "signIn" src = "Pics/No Profile Icon2.png">
         <h1 class = "cust-signIn">EMPLOYEE</h1>
 
-        <form action = "" method = "POST">
-          <input class= "employee_id" type="text" placeholder="Employee ID">
+        <form action = "php/employee_signIn.php" method = "POST">
+          <input class= "employee_id" type="text" name = "employee_id" placeholder="Employee ID">
           </br>
-          <input class = "password" type="password" placeholder="Password">
+          <input class = "password" type="password" name = "password" placeholder="Password">
           </br>
           <input type= "submit" class = "bttn" value="Sign In">
         </form>
