@@ -78,11 +78,13 @@ require('connect.php'); // Adding connect file for database connection
       mysqli_query($conn, $sql2);
 
       echo '<script>alert("Details updated to database!")</script>';
+      echo'<script>window.location= "../customer_signIn.html";</script>'; // Redirecting to another page
 
   }
 
   else{
     echo '<script>alert("Please enter all the details!")</script>';
+    echo '<script>window.location= "../signUp.html";</script>'; // Redirecting to another page
   }
 
 
