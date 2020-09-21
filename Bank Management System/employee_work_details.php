@@ -26,6 +26,41 @@
     $manager_contact = $row['Phone_No'];
   }
 
+  $counter = 0;
+  $max = 0; // For max number of rows
+
+  $sql3 = "Select count(*) as Count From work_tracker where Employee_ID = '$employee_id';";
+  $result3 = mysqli_query($conn, $sql3);
+
+  while($row = mysqli_fetch_array($result3)) {
+    $check = $row['Count'];
+  }
+
+  if($check >= 7){
+    $max = 7;
+  }
+
+  else{
+    $max = $check;
+  }
+
+  $sql2 = "Select * From work_tracker where Employee_ID = '$employee_id' Order By Work_Date DESC, SignIn_Time DESC;";
+  $result2 = mysqli_query($conn, $sql2);
+  $avg_work_hour = 0;
+
+  while($row = mysqli_fetch_array($result2) ) {
+
+    if($counter < $max){
+      $avg_work_hour = $avg_work_hour + $row['Working_Hours'];
+      $counter++;
+    }
+    else{
+      break;
+    }
+  }
+
+  $avg_work_hour = number_format($avg_work_hour/7 , 1);
+
 ?>
 
 <!DOCTYPE html>
@@ -52,14 +87,14 @@
           <li><a href="employee_profile.php">Profile</a></li>
           <li class =" active" ><a class =" active" href="employee_work_details.php">Work Details</a></li>
           <li><a href="employee_work_tracker.php">Work Time Tracker </a></li>
-          <li><a href="employee_signIn.html">Sign Out</a></li>
+          <li><a href="php/employee_signOut.php">Sign Out</a></li>
         </div>
       </section>
       <section class = 'right'>
 
         <h1 class="detail_main">Work Details</h1>
         <div class = "details">
-          <h2>Average Work Hours Per Week - </h2>
+          <h2>Average Work Hours Per Week - <span><?php echo $avg_work_hour . " hrs"?></span> </h2>
           <h2>Work Hours Per Week Limit - <span><?php echo $work_limit . " hrs"?></span></h2>
           <h2>Salary - <span><?php echo "TK " . $salary?></span></h2>
           <h2>Designation - <span><?php echo $designation?></span></h2>

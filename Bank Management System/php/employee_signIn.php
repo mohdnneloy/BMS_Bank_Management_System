@@ -3,6 +3,7 @@
 require('connect.php'); // Adding connect file for database connection
 
 session_start();
+date_default_timezone_set('Asia/Dhaka');
 
 // Checking if email values are set or not
  if(empty($_POST["employee_id"]) && empty($_POST["password"])){
@@ -81,6 +82,8 @@ session_start();
 
         else if (!empty($employee_idcheck) && !empty($passwordcheck)){
 
+          $_SESSION['current_date'] = date("y-m-d");
+          $_SESSION['current_time'] = date("h:i:s" , time());
           echo '<script>alert("Signed In!")</script>';
           echo '<script>window.location= "../employee_profile.php";</script>';
           exit();

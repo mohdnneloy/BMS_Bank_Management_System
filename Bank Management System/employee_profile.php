@@ -59,7 +59,7 @@
           <li class =" active" ><a class =" active" href="employee_profile.php">Profile</a></li>
           <li><a href="employee_work_details.php">Work Details</a></li>
           <li><a href="employee_work_tracker.php">Work Time Tracker </a></li>
-          <li><a href="employee_signIn.html">Sign Out</a></li>
+          <li><a href="php/employee_signOut.php">Sign Out</a></li>
         </div>
       </section>
       <section class = 'right'>
