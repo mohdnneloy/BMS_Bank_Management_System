@@ -1,7 +1,7 @@
 <?php
 
 require('connect.php'); // Adding connect file for database connection
-
+session_destroy();
 session_start();
 date_default_timezone_set('Asia/Dhaka');
 
@@ -43,7 +43,7 @@ date_default_timezone_set('Asia/Dhaka');
       $result0 = mysqli_query($conn, $sql0);
       $sql1 = "Select Employee_id From employee Where employee_id = '$employee_id';";
       $result1 = mysqli_query($conn, $sql1);
-      $sqle = "Select Password From employee Where password = md5('$password');";
+      $sqle = "Select Password From employee Where password = md5('$password') AND employee_id = '$employee_id';";
       $resulte = mysqli_query($conn, $sqle);
 
       while($row = mysqli_fetch_array($result0)) {

@@ -1,0 +1,156 @@
+*{
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.container{
+  width : 100%;
+  height : 100%;
+}
+
+section.left{
+
+  font-family: 'Mukta', sans-serif;
+  padding-top: 3%;
+  width : 20%;
+  height: 911px;
+  float : left;
+  text-align: center;
+  background-color: #5883FF;
+}
+
+section.right{
+
+  font-family: 'Mukta', sans-serif;
+  padding-top: 3%;
+  width : 80%;
+  float: right;
+
+
+}
+
+img{
+  border: 5px solid #5883FF;
+  width : 150px;
+  height : 150px;
+}
+
+.main{
+
+  background-color: white;
+  font-size: 18px;
+  border: 5px solid white;
+  border-radius: 30px;
+  width: 90%;
+  margin-left: 3%;
+
+}
+
+li{
+  list-style: none;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #5883FF;
+
+}
+
+li.active{
+
+  list-style: none;
+  background-color: white;
+}
+
+a.active{
+  width: 300px;
+  color: black;
+}
+
+a{
+  padding-left: 15px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Mukta', sans-serif;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+span{
+  font-weight: lighter;
+}
+
+.navbar{
+  text-align: left;
+  background-color: #5883FF;
+  position: relative;
+}
+
+.detail_main{
+
+  font-weight: bold;
+  font-size: 50px;
+  padding-left : 10%;
+  padding-top : 5%;
+}
+
+.details{
+  border: 5px solid #5883FF;
+  border-radius: 50px;
+  width: 70%;
+  padding-left: 5%;
+  margin-left: 10%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  margin-top: 3%;
+}
+
+h2{
+  padding-top: 2%;
+}
+
+label{
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.5em;;
+}
+
+input{
+  margin-left: 3%;
+  margin-top: 3%;
+  width : 30%;
+  height : 40px;
+  border: 2px solid #707070;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 20px;
+  outline: none;
+  color: #707070;
+  font-family: 'Mukta', sans-serif;
+}
+
+input.amount{
+    margin-left: 79px;
+}
+
+input.password{
+    margin-left: 93px;
+}
+
+input.bttn{
+  float: right;
+  margin-top: -11%;
+  margin-right: 20%;
+  width : 20%;
+  color: white;
+  border: 0px;
+  background-color: #FF6979;
+}
+
+input.bttn:hover{
+  float: right;
+  margin-top: -11%;
+  margin-right: 20%;
+  width : 20%;
+  color: white;
+  border: 0px;
+  background-color: #5883FF;
+  transition: .3s;
+}

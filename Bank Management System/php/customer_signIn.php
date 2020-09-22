@@ -1,6 +1,8 @@
 <?php
 
 require('connect.php'); // Adding connect file for database connection
+session_destroy();
+session_start();
 
 // Checking if email values are set or not
  if(empty($_POST["email"]) && empty($_POST["password"])){
@@ -32,13 +34,14 @@ require('connect.php'); // Adding connect file for database connection
       $email = $_POST["email"];
       $password = $_POST["password"];
 
+      $_SESSION['email_id'] = $email; // Session created for further use
 
       // Fetching Data from database
       $sql0 = "Select count(*) as Count From Customer;";
       $result0 = mysqli_query($conn, $sql0);
       $sql1 = "Select Email From customer Where Email = '$email';";
       $result1 = mysqli_query($conn, $sql1);
-      $sqle = "Select Password From customer Where Password = md5('$password');";
+      $sqle = "Select Password From customer Where Password = md5('$password') AND Email = '$email';";
       $resulte = mysqli_query($conn, $sqle);
 
       while($row = mysqli_fetch_array($result0)) {
@@ -59,6 +62,7 @@ require('connect.php'); // Adding connect file for database connection
 
         while($row = mysqli_fetch_array($resulte)) {
           $passwordcheck = $row['Password'];
+          $_SESSION['password_save'] = $passwordcheck; // Session created for further use
         }
 
         if (empty($emailcheck)){
@@ -78,7 +82,7 @@ require('connect.php'); // Adding connect file for database connection
         else if (!empty($emailcheck) && !empty($passwordcheck)){
 
           echo '<script>alert("Signed In!")</script>';
-          echo '<script>window.location= "../employee_signIn.html";</script>';
+          echo '<script>window.location= "../customer_profile.php";</script>';
           exit();
         }
       }

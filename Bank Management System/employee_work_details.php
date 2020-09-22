@@ -16,6 +16,8 @@
     $manager_id = $row['Manager_ID'];
   }
 
+  if(!empty($manager_id)){
+
   $sql1 = "Select * From Employee where employee_id = '$manager_id';";
   $result1 = mysqli_query($conn, $sql1);
 
@@ -25,6 +27,25 @@
     $manager_lname = $row['LName'];
     $manager_contact = $row['Phone_No'];
   }
+}
+
+else{
+    $manager_fname = "N/A";
+    $manager_lname = " ";
+    $manager_contact = "N/A";
+}
+
+    if(empty($salary)){
+      $salary = 0;
+    }
+
+    if(empty($designation)){
+      $designation = "N/A";
+    }
+
+    if(empty($work_limit)){
+      $work_limit = 0;
+    }
 
   $counter = 0;
   $max = 0; // For max number of rows
@@ -60,6 +81,9 @@
   }
 
   $avg_work_hour = number_format($avg_work_hour/7 , 1);
+
+
+
 
 ?>
 
